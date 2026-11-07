@@ -1,0 +1,61 @@
+:root {
+  --ink: #14213D;
+  --paper: #F5F7FA;
+  --teal: #0E7C86;
+  --teal-dark: #0A5F67;
+  --amber: #F2A900;
+  --coral: #E4572E;
+  --line: #DCE2EA;
+}
+body { font-family: 'Manrope', system-ui, sans-serif; background: var(--paper); color: var(--ink); }
+h1, h2, h3, h4 { font-weight: 800; letter-spacing: -.01em; }
+.btn-primary { --bs-btn-bg: var(--teal); --bs-btn-border-color: var(--teal); --bs-btn-hover-bg: var(--teal-dark);
+  --bs-btn-hover-border-color: var(--teal-dark); --bs-btn-active-bg: var(--teal-dark); --bs-btn-active-border-color: var(--teal-dark);
+  --bs-btn-disabled-bg: var(--teal); --bs-btn-disabled-border-color: var(--teal); font-weight: 700; }
+.btn-outline-primary { --bs-btn-color: var(--teal); --bs-btn-border-color: var(--teal); --bs-btn-hover-bg: var(--teal);
+  --bs-btn-hover-border-color: var(--teal); --bs-btn-active-bg: var(--teal-dark); }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--teal); box-shadow: 0 0 0 .2rem rgba(14,124,134,.2); }
+.form-check-input:checked { background-color: var(--teal); border-color: var(--teal); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+/* Navbar */
+.app-nav { background: var(--ink); }
+.app-nav .navbar-brand { color: #fff; font-weight: 800; }
+.app-nav .nav-user { color: #C9D2E3; font-size: .9rem; }
+
+/* Halaman login: rak buku sebagai elemen utama */
+.login-body { min-height: 100vh; }
+.login-wrap { display: grid; grid-template-columns: 1.1fr 1fr; min-height: 100vh; }
+.login-shelf { background: var(--ink); color: #fff; padding: 3rem; display: flex; flex-direction: column; justify-content: space-between; }
+.shelf-title { font-size: 1.4rem; font-weight: 800; }
+.shelf-note { color: #C9D2E3; max-width: 22rem; margin: 0; }
+.spines { display: flex; align-items: flex-end; gap: 6px; height: 55vh; border-bottom: 6px solid var(--amber); padding: 0 .5rem; }
+.spines span { flex: 1; max-width: 46px; height: var(--h); background: var(--c); border-radius: 3px 3px 0 0; }
+.login-form-area { display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.login-card { width: 100%; max-width: 380px; }
+.login-card h1 { font-size: 2rem; }
+@media (max-width: 800px) {
+  .login-wrap { grid-template-columns: 1fr; }
+  .login-shelf { padding: 1.5rem; }
+  .spines { height: 90px; }
+  .shelf-note { display: none; }
+}
+
+/* Dashboard */
+.stat { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.25rem; height: 100%; }
+.stat .angka { font-size: 2rem; font-weight: 800; line-height: 1; }
+.stat .label { color: #5B6780; font-size: .9rem; }
+.stat.ada { border-left: 5px solid var(--teal); }
+.stat.habis { border-left: 5px solid var(--coral); }
+.stat.total { border-left: 5px solid var(--amber); }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; }
+.table > :not(caption) > * > * { vertical-align: middle; }
+.table thead th { font-size: .85rem; color: #5B6780; font-weight: 700; border-bottom: 2px solid var(--line); }
+.thumb { width: 48px; height: 66px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); background: var(--paper); }
+.status-ada, .status-habis { display: inline-block; padding: .2rem .65rem; border-radius: 99px; font-size: .8rem; font-weight: 700; }
+.status-ada { background: #D6F0F1; color: var(--teal-dark); }
+.status-habis { background: #FBE0D8; color: #A93A1A; }
+
+/* Form buku */
+.preview-sampul { width: 140px; height: 196px; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+.form-panel { max-width: 860px; }
