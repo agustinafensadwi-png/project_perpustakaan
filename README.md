@@ -39,8 +39,9 @@ project_perpustakaan/
 ├── dashboard.php        # Read
 ├── tambah_buku.php  + proses_tambah.php   # Create
 ├── edit_buku.php    + proses_edit.php     # Update
-├── hapus_buku.php                          # Delete
-└── db_perpustakaan.sql
+├── hapus_buku.php    
+├── db_perpustakaan.sql
+└── README.md
 ```
 
 ## Struktur tabel database
