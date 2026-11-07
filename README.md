@@ -70,8 +70,14 @@ project_perpustakaan/
 
 | Halaman | Screenshot |
 |---|---|
-| Login | `![Login](docs/login.png)` |
-| Dashboard | `![Dashboard](docs/dashboard.png)` |
-| Tambah buku | `![Tambah](docs/tambah.png)` |
-| Edit buku | `![Edit](docs/edit.png)` |
-| Konfirmasi hapus | `![Hapus](docs/hapus.png)` |
+| Login | ![Login](screenshots/login.png) |
+| Dashboard | ![Dashboard](screenshots/dashboard.png) |
+| Tambah buku | ![Tambah](screenshots/tambah-buku.png) |
+| Edit buku | ![Edit](screenshots/edit-buku.png) |
+| Konfirmasi hapus | ![Hapus](screenshots/hapus-buku.png) |
+| Sturktur tabel database | ![Struktur](screenshots/struktur-database-buku.png) |
+| Database buku | ![Database](screenshots/database-buku.png) |
+| Upload sampul | ![Upload](screenshots/upload-sampul.png) |
+
+#Video Demo
+[Tonton di Youtube] (https://youtu.be/R6fw5fTRbw4)

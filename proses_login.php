@@ -12,7 +12,7 @@ $stmt->bind_param('s', $username);
 $stmt->execute();
 $user = $stmt->get_result()->fetch_assoc();
 
-if ($user && password_verify($password, $user['password'])) {
+if ($user && $password === $user['password']) {
     session_regenerate_id(true);               // cegah session fixation
     $_SESSION['user_id']  = $user['id'];
     $_SESSION['username'] = $user['username'];
